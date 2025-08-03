@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./basket.css" />
+    <link rel="icon" type="image/svg" href="./assets/images/logo.png" />
+    <title>Sneakers</title>
+  </head>
+  <body>
+    <div id="backdrop" class="backdrop"></div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-content--title">
+          <p>Корзина</p>
+        </div>
+        <div class="modal-content__main"></div>
+      </div>
+    </div>
+    <div class="main_container">
+      <header>
+        <a href="/" class="header_left">
+          <img src="/assets/images/logo.png" alt="logo" class="logo" />
+          <div class="header_left--text">
+            <p>REACT SNEAKERS</p>
+            <span>Магазин лучших кроссовок</span>
+          </div>
+        </a>
+        <div class="header_right">
+          <div class="header_right--box" id="basket">
+            <img
+              src="./assets/icons/basket.svg"
+              alt="basket"
+              class="header_svg"
+            />
+            <span class="price" id="total-summary">0</span>
+          </div>
+          <a
+            class="header_right--box link-to-favorites"
+            href="./favorites.html"
+          >
+            <img
+              src="./assets/icons/favorite.svg"
+              alt="favorite"
+              class="header_svg"
+            />
+            <span>Закладки</span>
+          </a>
+          <div class="header_right--box">
+            <img
+              src="./assets/icons/avatar.svg"
+              alt="profile"
+              class="header_svg"
+            />
+            <span>Профиль</span>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="main-image_container"></section>
+        <article>
+          <div class="main_second__wrapper">
+            <p>Все кроссовки</p>
+            <div class="input_container">
+              <img
+                src="./assets/icons/search.svg"
+                alt="search"
+                class="search"
+              />
+              <input type="search" placeholder="Поиск ..." id="input" />
+            </div>
+          </div>
+          <ul class="cards_container"></ul>
+        </article>
+      </main>
+      <footer></footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./favorites.js"></script>
+  </body>
+</html>
